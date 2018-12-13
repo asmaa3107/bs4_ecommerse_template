@@ -1,0 +1,34 @@
+$bg-color: rgb(235, 246, 255);
+// Variable Overrides 
+$theme-colors: ("primary": #d95700);
+// Bootstrap Sass Imports
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "./mytheme/_mixins";
+
+body {
+    background: $bg-color;
+}
+
+.jumbotron {
+    background-color: #ffffff !important;
+    border-top: 3px solid rgb(219, 219, 219);
+}
+
+.left-auto {
+    left: auto;
+}
+
+//****************Home Style************
+.header {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 66%, 0 99%);
+    clip-path: polygon(0 0, 100% 0, 100% 66%, 0 99%);
+}
+
+.leftheader {
+    @include drowClipPath('../../img/hero.jpg', to right bottom, 70vh, polygon(0 0, 100% 0, 100% 84%, 0 100%));
+
+}
+
+.rightheader {
+    @include drowClipPath('../../img/hero.jpg', to right bottom, 70vh, polygon(0 0, 100% 0%, 100% 66%, 0% 84%));
+}

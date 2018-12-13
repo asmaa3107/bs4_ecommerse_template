@@ -1,0 +1,14 @@
+@import './pasteal-palet';
+
+//*************mixins
+@mixin drowClipPath($imgurl, $g-direction, $height, $path) {
+    background-image:
+        linear-gradient($g-direction, rgba(238, 221, 85, 0.6),
+        rgba(217, 161, 113, 0.8)),
+        url($imgurl);
+    background-size: cover;
+    background-position: top;
+    height: $height;
+    -webkit-clip-path: $path;
+    clip-path: $path;
+}
