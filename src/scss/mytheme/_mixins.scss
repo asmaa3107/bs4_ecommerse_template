@@ -1,11 +1,12 @@
 @import './pasteal-palet';
 
 //*************mixins
-@mixin drowClipPath($imgurl, $g-direction, $height, $path) {
+@mixin drowClipPath($imgurl, $g-direction, $height, $path, $color1, $color2) {
     background-image:
-        linear-gradient($g-direction, rgba(238, 221, 85, 0.6),
-        rgba(217, 161, 113, 0.8)),
+        linear-gradient($g-direction, $color1, $color2),
         url($imgurl);
+
+
     background-size: cover;
     background-position: top;
     height: $height;

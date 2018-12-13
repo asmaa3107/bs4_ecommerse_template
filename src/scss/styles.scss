@@ -1,6 +1,6 @@
 $bg-color: rgb(235, 246, 255);
 // Variable Overrides 
-$theme-colors: ("primary": #d95700);
+$theme-colors: ("primary": #cc9ba5);
 // Bootstrap Sass Imports
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "./mytheme/_mixins";
@@ -10,7 +10,7 @@ body {
 }
 
 .jumbotron {
-    background-color: #ffffff !important;
+    background-color: #ffffff;
     border-top: 3px solid rgb(219, 219, 219);
 }
 
@@ -19,16 +19,24 @@ body {
 }
 
 //****************Home Style************
-.header {
+.clippeddiv-bottom {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 66%, 0 99%);
     clip-path: polygon(0 0, 100% 0, 100% 66%, 0 99%);
 }
 
+.clippeddiv-top {
+    -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 99%);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 99%);
+    background-color: #cc9ba5 !important;
+}
+
+//$imgurl, $g-direction, $height, $path, $color1, $color2)
 .leftheader {
-    @include drowClipPath('../../img/hero.jpg', to right bottom, 70vh, polygon(0 0, 100% 0, 100% 84%, 0 100%));
+    @include drowClipPath('../../img/hero.jpg', to right bottom, 70vh, polygon(0 0, 100% 0, 100% 84%, 0 100%), rgb(204, 155, 165), $bg-color);
 
 }
 
 .rightheader {
-    @include drowClipPath('../../img/hero.jpg', to right bottom, 70vh, polygon(0 0, 100% 0%, 100% 66%, 0% 84%));
+    @include drowClipPath('../../img/hero.jpg', to right top, 70vh,
+    polygon(0 0, 100% 0%, 100% 66%, 0% 84%), $bg-color, rgb(204, 155, 165));
 }
