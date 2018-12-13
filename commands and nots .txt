@@ -1,0 +1,28 @@
+
+$ mkdir bs4 && cd bs4
+
+$ npm init -y
+
+$ npm install gulp browser-sync gulp-sass --save-dev
+$ npm i gulp-cssmin
+$ npm install bootstrap jquery popper.js --save
+
+$ npm install --global gulp-cli
+
+$npm gulp run
+
+
+.leftheader {
+    @include drowClipPath('../../img/hero.jpg', to right bottom, 50vh, polygon(0 0, 100% 0, 100% 84%, 0 100%));
+
+}
+
+.rightheader {
+    @include drowClipPath('../../img/hero.jpg', to right bottom, 50vh, polygon(0 0, 100% 0%, 100% 66%, 0% 84%));
+}
+==================================
+some nots:
+You use "m " margin or "p" for padding
+Following m or p you add either:" t (top), b (bottom), l (left), r (right), x (left and right), y (top and bottom), "sor nothing for all 4 sides.
+After a hyphen, you specify sizes 0 through 5 (5 being the largest amount of spacing).
+So, in our example, it looks like we need to use margin and bottom to push away the cards beneath it.
