@@ -8,13 +8,19 @@
     <link rel="icon" type="image/ico" href="../src/assets/imgs/ico.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
+    <!----------slick slider for products------->
+    <link rel="stylesheet" href="./plugins/slick-slider/slick.css">
+    <link rel="stylesheet" href="./plugins/slick-slider/slick-theme.css">
+    <!----------slick slider for products------->
+
     <link rel="stylesheet" href="/css/styles.css">
+    <!----------AOS Animation------->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container-fluid">
-
         <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
             <a class="navbar-brand" href="#">CompanyName</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -25,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">1Home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
@@ -49,7 +55,6 @@
             </div>
         </nav>
         <!-- Add here -->
-
         <div class="jumbotron clippeddiv-bottom p-0">
             <div class="row">
                 <div class=" col-sm-12 col-md-6 leftheader p-5">
@@ -82,61 +87,92 @@
             <h3 class="display-4 mt-2 mb-5 text-center">
                 new arrivals
             </h3>
-            <div class="row">
+            <div class="container">
+                <div class="col-xs-12">
+                    <h2 class="text-center small_text _res-title mb0 mt10">Businesses of ALL sizes enjoy the
+                        reliability of ULTATEL solutions</h2>
+                </div>
+                <br />
+                <hr />
 
-                <div class="col col-sm-12 col-md-3">
-                    <div class="card  mb-4">
-                        <div class="card-body text-center">
-                            <p><img class="img-fluid img-thumbnail " src="./assets/imgs/products/3.jpg" alt="" srcset="./assets/imgs/products/3lz.jpg"></p>
-                            <h5 class="card-title">Free Size Blue Shirt</h5>
-                            <p class="card-text">$552.50</p>
-                            <a href="#" class="card-link">show details ></a>
+                <div class="row animated text-center activate fadeInUp new-arrivals mb-5" data-cursor="x-arrows"
+                    data-anim="fadeInUp">
+                    <div class="col col-sm-12 col-md-3 slick-slide ">
+                        <div class="card  mb-4">
+                            <div class="card-body text-center">
+                                <p><img class="img-fluid img-thumbnail " src="./assets/imgs/products/1.jpg" alt=""
+                                        srcset="./assets/imgs/products/3lz.jpg"></p>
+                                <h5 class="card-title">Free Size Blue Shirt</h5>
+                                <p class="card-text">$552.50</p>
+                                <a href="#" class="card-link">show details ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------col close------>
+                    <div class="col col-sm-12 col-md-3 slick-slide">
+                        <div class="card  mb-4">
+                            <div class="card-body text-center">
+                                <p><img class="img-fluid img-thumbnail " src="./assets/imgs/products/3.jpg" alt=""
+                                        srcset="./assets/imgs/products/3lz.jpg"></p>
+                                <h5 class="card-title">Free Size Blue Shirt</h5>
+                                <p class="card-text">$552.50</p>
+                                <a href="#" class="card-link">show details ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------col close------>
+                    <div class="col col-sm-12 col-md-3 slick-slide">
+                        <div class="card  mb-4">
+                            <div class="card-body text-center">
+                                <p><img class="img-fluid img-thumbnail " src="./assets/imgs/products/4.jpg" alt=""
+                                        srcset="./assets/imgs/products/4.jpg"></p>
+                                <h5 class="card-title">Long Pink Pullover</h5>
+                                <p class="card-text">$42.50</p>
+                                <a href="#" class="card-link">show details ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------col close------>
+                    <div class="col col-sm-12 col-md-3 slick-slide">
+                        <div class="card  mb-4">
+                            <div class="card-body text-center">
+                                <p><img class="img-fluid img-thumbnail " src="./assets/imgs/products/5.jpg" alt=""
+                                        srcset="./assets/imgs/products/5.jpg"></p>
+                                <h5 class="card-title">Free Size Pink Shirt</h5>
+                                <p class="card-text">$42.50</p>
+                                <a href="#" class="card-link">show details ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------col close------>
+                    <!-------------col close------>
+                    <div class="col col-sm-12 col-md-3 slick-slide">
+                        <div class="card  mb-4">
+                            <div class="card-body text-center">
+                                <p><img class="img-fluid img-thumbnail " src="./assets/imgs/products/5.jpg" alt=""
+                                        srcset="./assets/imgs/products/5.jpg"></p>
+                                <h5 class="card-title">Free Size Pink Shirt</h5>
+                                <p class="card-text">$42.50</p>
+                                <a href="#" class="card-link">show details ></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-------------col close------>
-                <div class="col col-sm-12 col-md-3">
-                    <div class="card  mb-4">
-                        <div class="card-body text-center">
-                            <p><img class="img-fluid img-thumbnail " src="./assets/imgs/products/4.jpg" alt="" srcset="./assets/imgs/products/4.jpg"></p>
-                            <h5 class="card-title">Long Pink Pullover</h5>
-                            <p class="card-text">$42.50</p>
-                            <a href="#" class="card-link">show details ></a>
-                        </div>
-                    </div>
-                </div>
-                <!-------------col close------>
-                <div class="col col-sm-12 col-md-3">
-                    <div class="card  mb-4">
-                        <div class="card-body text-center">
-                            <p><img class="img-fluid img-thumbnail " src="./assets/imgs/products/5.jpg" alt="" srcset="./assets/imgs/products/5.jpg"></p>
-                            <h5 class="card-title">Free Size Pink Shirt</h5>
-                            <p class="card-text">$42.50</p>
-                            <a href="#" class="card-link">show details ></a>
-                        </div>
-                    </div>
-                </div>
-                <!-------------col close------>
-                <!-------------col close------>
-                <div class="col col-sm-12 col-md-3">
-                    <div class="card  mb-4">
-                        <div class="card-body text-center">
-                            <p><img class="img-fluid img-thumbnail " src="./assets/imgs/products/5.jpg" alt="" srcset="./assets/imgs/products/5.jpg"></p>
-                            <h5 class="card-title">Free Size Pink Shirt</h5>
-                            <p class="card-text">$42.50</p>
-                            <a href="#" class="card-link">show details ></a>
-                        </div>
-                    </div>
-                </div>
-                <!-------------col close------>
-            </div>
+            </div> <!-- END Container -->
+
             <!---------row 1 close---->
 
             <!---------row 2 close---->
         </div>
-        <!---------end container 1 close---->
+        <div data-aos="zoom-in-up">
 
-        <div class="jumbotron clippeddiv-top">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <!---------end container 1 close---->
+        <div class="jumbotron clippeddiv-top " color="custom-color">
             <div class="container p-5">
                 <div class="row mt-sm-4 mt-md-0 ">
                     <div class="col-sm-12 col-md-8 text-sm-center text-md-left">
@@ -177,14 +213,17 @@
             </div>
 
         </div>
-
-
     </div>
     <!-------container-fluid close-------->
 
     <script src="/js/jquery.min.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script src="./plugins/slick-slider/slick.min.js"></script>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="./js/configrations.js"></script>
+
 </body>
 
 </html>
