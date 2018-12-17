@@ -1,9 +1,19 @@
 $bg-color: rgb(235, 246, 255);
 // Variable Overrides 
-$theme-colors: ("primary": #cc9ba5);
+$theme-colors: ("primary": #cc9ba5, "custom-color": #900);
 // Bootstrap Sass Imports
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "./mytheme/_mixins";
+//AOS ANIMATION
+@import "node_modules/aos/src/sass/aos.scss";
+//courser styles
+@import "./mytheme/data-curser";
+
+//================================
+// body[data-aos-duration='4000'] [data-aos],
+// [data-aos][data-aos][data-aos-duration='4000'] {
+//     transition-duration: 4000ms;
+// }
 
 body {
     background: $bg-color;
@@ -27,12 +37,14 @@ body {
 .clippeddiv-top {
     -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 99%);
     clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 99%);
-    background-color: #cc9ba5 !important;
+    // background-color: color("purple") !important;
+    background-color: color("custom-color") !important;
+
 }
 
 //$imgurl, $g-direction, $height, $path, $color1, $color2)
 .leftheader {
-    @include drowClipPath('../../img/hero.jpg', to right bottom, 70vh, polygon(0 0, 100% 0, 100% 84%, 0 100%), rgb(204, 155, 165), $bg-color);
+    @include drowClipPath('', to right bottom, 70vh, polygon(0 0, 100% 0, 100% 84%, 0 100%), rgb(204, 155, 165), $bg-color);
 
 }
 
@@ -40,3 +52,13 @@ body {
     @include drowClipPath('../../img/hero.jpg', to right top, 70vh,
     polygon(0 0, 100% 0%, 100% 66%, 0% 84%), $bg-color, rgb(204, 155, 165));
 }
+
+.skewtransform {
+    transform: rotate3d(-1, 5, 0, -57deg)
+}
+
+// .new-arrivals{
+//     .slick-slide{
+
+//     }
+// }
