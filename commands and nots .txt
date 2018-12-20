@@ -20,6 +20,13 @@ $npm gulp run
 .rightheader {
     @include drowClipPath('../../img/hero.jpg', to right bottom, 50vh, polygon(0 0, 100% 0%, 100% 66%, 0% 84%));
 }
+
+ <p class="shineEffect">
+                                    <figure>
+                                        <img class="img-fluid img-thumbnail " src="./assets/imgs/products/1.jpg" alt=""
+                                            srcset="./assets/imgs/products/3lz.jpg" />
+                                    </figure>
+                                </p>
 ==================================
 some nots:
 You use "m " margin or "p" for padding

@@ -1,9 +1,16 @@
 $bg-color: rgb(235, 246, 255);
 // Variable Overrides 
+
+
+
 $theme-colors: ("primary": #cc9ba5, "custom-color": #900);
+
 // Bootstrap Sass Imports
 @import "node_modules/bootstrap/scss/bootstrap";
-@import "./mytheme/_mixins";
+// @import "node_modules/bootstrap/scss/functions";
+// @import "node_modules/bootstrap/scss/variables";
+
+@import "./mytheme/mixins";
 //AOS ANIMATION
 @import "node_modules/aos/src/sass/aos.scss";
 //courser styles
@@ -53,6 +60,13 @@ body {
     polygon(0 0, 100% 0%, 100% 66%, 0% 84%), $bg-color, rgb(204, 155, 165));
 }
 
+.highlight {
+    background: url(https://andyhooke.co.uk/wp-content/uploads/2018/02/yellow-brushstroke.png);
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding: 8px 0;
+}
+
 .skewtransform {
     transform: rotate3d(-1, 5, 0, -57deg)
 }
@@ -62,3 +76,128 @@ body {
 
 //     }
 // }
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/*************hober shine effect*********/
+
+.shineEffect {
+    // border: 5px solid black;
+
+    span {
+        position: relative;
+        //  border: 5px solid black;
+        display: block;
+
+        &:before {
+            // position: relative;
+            // top: 0;
+            //   border: 5px solid red;
+            /*     left: -75%;
+            z-index: 2;
+            display: inline-block;
+            content: ''; */
+            // width: 50%;
+            // height: 100vh;
+            position: absolute;
+            top: 0;
+
+            left: 1%;
+            z-index: 2;
+            display: inline-block;
+            content: '';
+            width: 100%;
+            height: 100%;
+
+
+            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+            -webkit-transform: skewX(-25deg);
+            transform: skewX(-25deg);
+        }
+
+        &:hover::before {
+            -webkit-animation: shine 1s;
+            animation: shine 1s;
+            //  left:10%
+            // border: 6px solid #900
+        }
+    }
+}
+
+@-webkit-keyframes shine {
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 100%;
+    }
+}
+
+/******Drag drop css***********/
+#container {
+    border: solid;
+    width: 332px;
+    height: 332px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+    .hole {
+        background-color: black;
+        border: 1px pink solid;
+        width: 160px;
+        height: 160px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        .item {
+            font-size: 128px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 140px;
+            height: 140px;
+            background-color: #C0C0C0;
+            color: #FFF;
+            text-align: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .dragging {
+            background-color: gold !important;
+        }
+    }
+}
+
+//id conatiner
+
+//*********************clip masking**
+img {
+    clip-path: url(#clipping);
+}

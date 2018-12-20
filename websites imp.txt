@@ -1,0 +1,17 @@
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity
+https://www.creativebloq.com/inspiration/css-animation-examples
+https://codepen.io/james-priest/pen/LmZNeV drag and drop
+
+file:///C:/Users/USER/AppData/Local/Temp/Rar$EXa0.724/TooltipAnimations/index.html tooltip bubble effect
+
+https://github.com/jariz/vibrant.js/
+color extraction (old version)
+
+https://github.com/akfish/node-vibrant/
+color extraction (new version)
+
+color extraction (Example)
+https://embed.plnkr.co/plunk/DGLrkj
+
+remove image bg 
+https://www.remove.bg/
